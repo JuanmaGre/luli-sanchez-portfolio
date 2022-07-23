@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
     return (
     <nav>
-        <div className="flex justify-center items-center mt-3 space-x-2 md:space-x-10">
+        <div className="bg-[#d1fae5] flex justify-center items-center mt-3 space-x-2 md:space-x-10">
             <ul className="hidden space-x-4 md:flex">
                 <li className="navBarLinks">
                     <Link href="/aboutMe">
@@ -20,7 +20,7 @@ export default function Navbar() {
                         </a>
                     </Link>
                 </li>
-                <li className="navBarTitle">
+                <li className="navBarTitle cursor-default">
                     <h1>
                         LULI SANCHEZ
                     </h1>

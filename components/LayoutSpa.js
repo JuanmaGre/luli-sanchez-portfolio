@@ -40,10 +40,10 @@ const LayoutSpa = ({ children , title ,  footer = true, dark = false }) => {
                                 {/* - {new Date().getFullYear()} */}
         {
             footer && (
-                <footer className="bg-[#3498DB] text-black text-center">
+                <footer className="bg-[#d1fae5] text-black text-center">
                     <div>
                         <h6>&copy; Luciana Pilar Sanchez Portfolio</h6>
-                        <p>2022. All rights reserved</p>
+                        <p>2022. Todos los derechos reservados</p>
                     </div>
                 </footer>
             )
