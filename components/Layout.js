@@ -28,9 +28,9 @@ const Layout = ({ children , title ,  footer = true, dark = false }) => {
         <>
         <Navbar />
 
-        <main className="main">
+        <main>
             {title && (
-                <h1 className="bg-light">
+                <h1>
                     {title}
                 </h1>
             )}
@@ -40,7 +40,7 @@ const Layout = ({ children , title ,  footer = true, dark = false }) => {
                                 {/* - {new Date().getFullYear()} */}
         {
             footer && (
-                <footer className="bg-[#d1fae5] text-black text-center">
+                <footer className="bg-[#d1fae5] text-black font-footer font-bold text-sm text-center">
                     <div>
                         <h6>&copy; Luciana Pilar Sanchez Portfolio</h6>
                         <p>2022. All rights reserved</p>

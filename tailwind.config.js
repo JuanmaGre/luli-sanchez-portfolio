@@ -5,6 +5,13 @@ module.exports = {
         './components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
+        fontFamily: {
+            't': ['Arbutus'],
+            'title': ['Anton'],
+            't2': ['Charmonman'],
+            'footer': ['Anybody'],
+            'links': ['Chilanka'],
+        },
         extend: {},
     },
     plugins: [],

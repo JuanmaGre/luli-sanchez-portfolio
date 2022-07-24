@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,12 +16,12 @@
 
 @layer components {
     .navBarLinks {
-        @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold
-        transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl;
+        @apply flex text-xs font-footer font-extrabold items-center gap-x-2 rounded px-5 py-1.5
+        transition hover:text-[#a5b4fc] md:py-2.5 md:px-4 md:text-lg;
     }
 
     .navBarTitle {
-        @apply text-4xl ;
+        @apply text-5xl tracking-wide font-title px-12;
     }
 
 }

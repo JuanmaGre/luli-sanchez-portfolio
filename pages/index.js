@@ -11,17 +11,17 @@ export default function index() {
                 <title>LPS Portfolio</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            <button>
+            
+            <button className='bg-[#1d4ed8]'>
                 <Link href="/home">
-                <a className="nav-link active" aria-current="page">
+                <a className="nav-link active font-footer text-5xl" aria-current="page">
                     English
                 </a>
                 </Link>
             </button>
-            <button>
+            <button className='bg-[#1d4ed8]'>
             <Link href="/homeSpa">
-                <a className="nav-link active" aria-current="page">
+                <a className="nav-link active font-bold font-footer text-5xl" aria-current="page">
                     Spanish
                 </a>
                 </Link>

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-    <nav>
-        <div className="bg-[#d1fae5] flex justify-center items-center mt-3 space-x-2 md:space-x-10">
+    <nav className="bg-[#ffedd5]/50 py-5">
+        <div className="flex justify-center items-center space-x-2 md:space-x-10">
             <ul className="hidden space-x-4 md:flex">
                 <li className="navBarLinks">
                     <Link href="/aboutMe">
@@ -22,7 +22,7 @@ export default function Navbar() {
                 </li>
                 <li className="navBarTitle cursor-default">
                     <h1>
-                        LULI SANCHEZ
+                        Luli Sanchez
                     </h1>
                 </li>
                 <li className="navBarLinks">
