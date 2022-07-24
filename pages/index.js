@@ -12,20 +12,38 @@ export default function index() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             
-            <button className='bg-[#1d4ed8]'>
+            <img 
+                src="/background.svg"
+                alt=""
+                // max-width={1920}
+                // max-height={1068}
+                className="absolute object-cover"
+            />
+            <div className='text-7xl tracking-wide content-center justify-center items-center font-title absolute ml-40'>
+                <h6 className='text-black tracking-tighter text-2xl ml-24 cursor-default'>
+                    Luli Sanchez
+                </h6>
+                <h1 className='text-[#6366F1]/50 cursor-default'>
+                    My Portfolio
+                </h1>
+            </div>
+            <div className='flex justify-center items-center py-40 space-x-40'>
                 <Link href="/home">
-                <a className="nav-link active font-footer text-5xl" aria-current="page">
-                    English
-                </a>
+                    <button className='buttonLanding'>
+                        <a className="nav-link active" aria-current="page">
+                            english
+                        </a>        
+                    </button>
                 </Link>
-            </button>
-            <button className='bg-[#1d4ed8]'>
-            <Link href="/homeSpa">
-                <a className="nav-link active font-bold font-footer text-5xl" aria-current="page">
-                    Spanish
-                </a>
+                
+                <Link href="/homeSpa">
+                    <button className='buttonLanding'>
+                        <a className="nav-link active" aria-current="page">
+                            español
+                        </a>
+                    </button>
                 </Link>
-            </button>
+            </div>
         </div>
     )
 };

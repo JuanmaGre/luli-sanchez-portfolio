@@ -24,4 +24,9 @@
         @apply text-5xl tracking-wide font-title px-12;
     }
 
+    .buttonLanding {
+        @apply absolute font-bold font-footer text-3xl tracking-wide hover:text-[#d6877c]
+        bg-transparent 
+    }
+
 }
