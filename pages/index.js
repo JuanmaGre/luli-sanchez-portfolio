@@ -12,24 +12,25 @@ export default function index() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             
-            <div className='relative inline-block text-center'>
-                <img 
-                    src="/background.svg"
-                    alt=""
-                    className='bg-cover'
-                    // max-width={1920}
-                    // max-height={1068}
-                />
-                <div className='text-7xl tracking-wide content-center items-center
-            font-title'>
-                    <h6 className='text-black tracking-tighter text-2xl cursor-default'>
+            <div className='relative'>
+                <div className='absolute'>
+                    <img 
+                        src="/background.svg"
+                        alt=""
+                        className="object-cover"
+                    />
+                </div>
+                
+                <div className='absolute my-40 mx-96 font-title'>
+                    <h6 className='flex text-black justify-center tracking-tighter text-2xl cursor-default'>
                         Luli Sanchez
                     </h6>
-                    <h1 className='text-[#6366F1]/50 cursor-default'>
-                        My Portfolio
+                    <h1 className='text-9xl tracking-wide text-[#6366F1]/50 cursor-default'>
+                        Portfolio
                     </h1>
                 </div>
-                <div>
+
+                <div className='absolute my-72 ml-80'>
                     <Link href="/home">
                         <button className='buttonLanding'>
                             <a className="nav-link active" aria-current="page">
@@ -46,8 +47,7 @@ export default function index() {
                         </button>
                     </Link>
                 </div>
-            </div>
-            
+            </div>    
         </div>
     );
 };
