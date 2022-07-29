@@ -11,10 +11,10 @@ export default function home() {
                     RUPERTA
                 </h2>
                 <img 
-                    src="https://rb.gy/wxrz8v"
+                    src="luli.jpeg"
                     alt=""
                     width={500}
-                    height={500}
+                    height={300}
                     className="justify-center items-center mx-auto"
                 />
             </section>

@@ -16,8 +16,8 @@
 
 @layer components {
     .navBarLinks {
-        @apply flex text-xs font-footer font-extrabold items-center gap-x-2 rounded px-5 py-1.5
-        transition hover:text-[#a5b4fc] md:py-2.5 md:px-4 md:text-lg;
+        @apply flex text-xs font-footer font-bold items-center gap-x-2 rounded px-5 py-1.5
+        transition hover:text-[#a5b4fc] hover:font-extrabold md:py-2.5 md:px-4 md:text-lg;
     }
 
     .navBarTitle {
