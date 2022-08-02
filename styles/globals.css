@@ -19,14 +19,40 @@
         @apply flex text-xs font-footer font-bold items-center gap-x-2 rounded px-5 py-1.5
         transition hover:text-[#a5b4fc] hover:font-extrabold md:py-2.5 md:px-4 md:text-lg;
     }
-
     .navBarTitle {
         @apply text-5xl tracking-wide font-title px-12;
     }
-
+    .divLanding {
+        @apply absolute my-28 mx-60 justify-center items-center font-title
+        md:my-44 md:mx-80 lg:my-56 lg:mx-96 xl:mx-56 xl:my-52
+    }
+    .h6Landing {
+        @apply flex text-black justify-center tracking-tighter text-lg
+        cursor-default md:text-xl lg:text-2xl xl:text-3xl xl:my-2 xl:ml-60
+    }
+    .h1Landing {
+        @apply text-7xl tracking-wide text-[#6366F1]/50 cursor-default
+        md:text-8xl lg:text-9xl xl:ml-60
+    }
     .buttonLanding {
-        @apply justify-center py-10 mx-24 font-bold font-footer text-3xl tracking-wide hover:text-[#d6877c]
-        bg-transparent 
+        @apply justify-center py-16 mx-10 font-bold font-footer text-3xl tracking-wide hover:text-[#d6877c]
+        bg-transparent sm:text-2xl sm:px-8 sm:ml-3 sm:py-16 md:py-40 md:mx-12 md:ml-20 md:text-3xl lg:py-60
+        lg:ml-32 lg:px-14 xl:ml-44 xl:py-60
+    }
+
+    @media (max-width: 650px){
+        .divLanding {
+            @apply my-20 mx-48
+        }
+        .h6Landing {
+            @apply text-sm
+        }
+        .h1Landing {
+            @apply text-6xl
+        }
+        .buttonLanding {
+            @apply py-4 mx-28 -ml-2 text-xl
+        }
     }
 
 }

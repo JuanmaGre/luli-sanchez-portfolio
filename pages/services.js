@@ -22,7 +22,7 @@ function services() {
                             width={275}
                             className='rounded-t-full'
                         />
-                        <h1 className='justify-center text-center text-xl'>
+                        <h1 className='justify-center text-center text-xl pt-5'>
                             card 1
                         </h1>
                     </div>

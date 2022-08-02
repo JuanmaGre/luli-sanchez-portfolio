@@ -12,25 +12,25 @@ export default function index() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             
-            <div className='relative'>
-                <div className='absolute'>
+            <div className='flex'>
+                <div className='static'>
                     <img 
                         src="/background.svg"
                         alt=""
-                        className="object-cover"
+                        className="object-cover w-full h-full"
                     />
                 </div>
                 
-                <div className='absolute my-40 mx-96 font-title'>
-                    <h6 className='flex text-black justify-center tracking-tighter text-2xl cursor-default'>
+                <div className='divLanding'>
+                    <h6 className='h6Landing'>
                         Luli Sanchez
                     </h6>
-                    <h1 className='text-9xl tracking-wide text-[#6366F1]/50 cursor-default'>
+                    <h1 className='h1Landing'>
                         Portfolio
                     </h1>
                 </div>
 
-                <div className='absolute my-72 ml-80'>
+                <div className='absolute my-36 ml-48'>
                     <Link href="/home">
                         <button className='buttonLanding'>
                             <a className="nav-link active" aria-current="page">
