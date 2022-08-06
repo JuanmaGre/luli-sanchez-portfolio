@@ -15,11 +15,11 @@
     }
 
     ::-webkit-scrollbar {
-        @apply bg-[#fbbf24]
+        @apply bg-slate-300 w-3
     }
 
     ::-webkit-scrollbar-thumb {
-        @apply bg-[#fef3c7]
+        @apply bg-[#ffedd5]/50
     }
 }
 

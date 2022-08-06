@@ -1,38 +1,34 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
+
 function aboutMe() {
     return (
         <Layout>
-            <div className='grid grid-cols-2 mx-2 py-2'>
+            <div className='grid grid-cols-2 px-2 py-2'>
                 <div>
                     <img 
-                        src="asd.jpeg"
+                        src="about.jpg"
                         alt=""
                         width={660}
-                        max-height={400}
                     />
                 </div>
-                <div className='bg-[#d6d3d1]'>
-                    <h1 className='justify-center text-center mt-4 mb-8 text-4xl font-bold tracking-wide'>
-                        HI! I AM LUCIANA,<br></br>COMMUNITY MANAGER
-                    </h1>
-                    <h4 className='justify-center text-left ml-10 text-2xl mb-2'>
-                        I TELL YOU A LITTLE ABOUT ME
-                    </h4>
-                    <p className='justify-center text-left ml-5 text-lg pt-5'>
-                        - I am studying bachelor's degree in Advertising at the UADE.<br></br>
-                        - I am a student of the Digital Marketing career at Coderhouse.<br></br>
-                        - In addition, I independently carry out consultancies for people/businesses on social media
-                        and branding.<br></br>
-                        - I am studying bachelor's degree in Advertising at the UADE.<br></br>
-                        - I am a student of the Digital Marketing career at Coderhouse.<br></br>
-                        - In addition, I independently carry out consultancies for people/businesses on social media
-                        and branding.<br></br>
-                        - I am studying bachelor's degree in Advertising at the UADE.<br></br>
-                        - I am a student of the Digital Marketing career at Coderhouse.<br></br>
-                        - In addition, I independently carry out consultancies for people/businesses on social media
-                        and branding.<br></br>
+                <div className='bg-[#d6d3d1] cursor-default justify-center text-center'>
+                    <p className='font-services pt-36 text-lg pl-5 pr-5'>
+                    Hello! My name is Luciana Pilar Sanchez but everyone knows me as Luli. 
+                    <br></br>
+                    <br></br>
+                    I am 25 years old and I am passionate about everything that has to do with communication and its infinite possibilities of allowing the connection between people.
+                    This is one of the reasons why I decided to study a degree in Advertising, a career I am studying at the Universidad Argentina de la Empresa (UADE).
+                    <br></br>
+                    <br></br>
+                    In addition, in the digital world I found the orientation that I want to carry out in my professional path, and therefore, I began to study the Digital Marketing career at Coderhouse.
+                    <br></br>
+                    <br></br>
+                    This decision made me enter a universe that I really love. I am very interested in the entrepreneurial world and all that it can achieve through technology. It could be said that my daily question is how entrepreneurship can leave a mark on the world.
+                    <br></br>
+                    <br></br>
+                    I love working in a team with short-medium and long-term goals, I love learning new things and I do it quickly. I consider myself creative and decisive, always focused on solutions. I am very committed in everything I do.
                     </p>
                 </div>
             </div>
