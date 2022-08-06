@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,6 +12,14 @@
 @layer base {
     body {
         @apply bg-white;
+    }
+
+    ::-webkit-scrollbar {
+        @apply bg-[#fbbf24]
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-[#fef3c7]
     }
 }
 
@@ -39,7 +48,31 @@
         bg-transparent sm:text-2xl sm:px-8 sm:ml-3 sm:py-16 md:py-40 md:mx-12 md:ml-20 md:text-3xl lg:py-60
         lg:ml-32 lg:px-14 xl:ml-44 xl:py-60
     }
-
+    .main {
+        @apply bg-[#fb923c]/50 w-1/2 mx-8 px-5 py-4 mb-6 z-10 flex-col flex-1 justify-center items-center  
+    }
+    .inputGroup {
+        @apply h-[50%] w-[70%] flex flex-col border-cyan-600
+    }
+    .inputMess {
+        @apply h-[50%] w-[100%] flex flex-col mb-4
+    }
+    .inputLabel {
+        @apply text-left py-4
+    }
+    .inputField {
+        @apply h-8
+    }
+    .inputField2 {
+        @apply h-16 flex flex-col
+    }
+    .buttonSubmit {
+        @apply px-12 mt-5 py-2 bg-violet-400/80 text-xl text-center text-[#dc2626]
+    }
+    .services {
+        @apply justify-center text-center bg-[#ecfccb] rounded-full text-xl font-services mt-3.5
+        mx-16 hover:text-[#a5b4fc] cursor-pointer
+    }
     @media (max-width: 650px){
         .divLanding {
             @apply my-20 mx-48
@@ -54,5 +87,4 @@
             @apply py-4 mx-28 -ml-2 text-xl
         }
     }
-
 }

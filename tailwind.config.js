@@ -11,6 +11,7 @@ module.exports = {
             't2': ['Charmonman'],
             'footer': ['Anybody'],
             'links': ['Chilanka'],
+            'services': ['Lato'],
         },
         extend: {},
     },
