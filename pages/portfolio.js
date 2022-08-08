@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from '../components/Layout'
 
 function portfolio() {
     return (
-        <div>portfolio</div>
+        <Layout>
+            <div>portfolio</div>
+        </Layout>
     )
 };
 

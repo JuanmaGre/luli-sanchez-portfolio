@@ -1,20 +1,21 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import 'animate.css'
 
 
 function aboutMe() {
     return (
         <Layout>
-            <div className='grid grid-cols-2 px-2 py-2'>
-                <div>
+            <div className='grid grid-cols-2 px-2 py-2 space-x-3 lg:px-6'>
+                <div className='animate__animated animate__fadeInLeft'>
                     <img 
                         src="about.jpg"
                         alt=""
                         width={660}
                     />
                 </div>
-                <div className='bg-[#d6d3d1] cursor-default justify-center text-center'>
-                    <p className='font-services pt-36 text-lg pl-5 pr-5'>
+                <div className='bg-[#d6d3d1] cursor-default justify-center text-center animate__animated animate__fadeInRight'>
+                    <p className='font-footer font-bold text-xl pl-5 pr-5 tracking-wider xl:pt-36 lg:pt-5 lg:text-lg md:pt-10 md:text-sm'>
                     Hello! My name is Luciana Pilar Sanchez but everyone knows me as Luli. 
                     <br></br>
                     <br></br>

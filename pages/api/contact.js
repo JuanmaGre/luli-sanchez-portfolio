@@ -17,7 +17,7 @@ export default function (req, res) {
         from: req.body.email,
         to: 'lulipsanchez@gmail.com',
         subject: `Message From ${req.body.name}`,
-        text: req.body.message + " | Sent from: " + req.body.email,
+        text: req.body.message + " | Subject: " + req.body.subject,
         html: `<div>${req.body.message}</div><p>Sent from:
         ${req.body.email}</p>`
     }

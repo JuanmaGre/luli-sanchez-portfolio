@@ -13,7 +13,6 @@ function contact() {
 
     const handleSubmit = (e) => { 
         e.preventDefault()
-        console.log('Sending')
     
         let data = {
             name,
@@ -40,15 +39,16 @@ function contact() {
                 setMessage('')
             }
         })
+        alert('Message received. I will contact you on the next 36 hours')
     }
-
+    
     return (
         <Layout>
             <div>
-                <h1 className='text-5xl pt-6 pb-2 justify-center text-center font-footer font-bold'>
+                <h1 className='text-5xl py-6 justify-center text-center font-footer font-bold'>
                     Contact
                 </h1>
-                <div className='flex-mb-4 xl:pl-24 xl:pr-24'>
+                <div className='flex-mb-4 pb-2 xl:pl-24 xl:pr-24'>
                     <form className='main rounded-3xl'>
                         <formGroup className="inputGroup">
                             <label htmlFor='name' className='inputLabel'>
