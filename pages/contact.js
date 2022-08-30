@@ -12,14 +12,14 @@ function contact() {
     const [submitted, setSubmitted] = useState(false)
 
     const handleSubmit = (e) => { 
-        e.preventDefault()
+        e.preventDefault();
     
         let data = {
             name,
             email,
             subject,
             message
-        }
+        };
 
         fetch('api/contact', {
             method: 'POST',
@@ -40,7 +40,7 @@ function contact() {
         })
         alert('Message received. I will contact you on the next 36 hours')
     }
-    
+
     return (
         <Layout>
             <div>
@@ -58,6 +58,7 @@ function contact() {
                                 onChange={(e)=>{setName(e.target.value)}}
                                 name='name' 
                                 className="inputField" 
+                                required
                             />  
                         </formGroup>
                         <formGroup className="inputGroup">
@@ -66,9 +67,10 @@ function contact() {
                             </label>
                             <input 
                                 type='email'
-                                onChange={(e)=>{setEmail(e.target.value)}}
                                 name='email'
                                 className="inputField" 
+                                required
+                                onChange={(e)=>{setEmail(e.target.value)}}
                             />
                         </formGroup>
                         <formGroup className="inputGroup">
@@ -77,10 +79,11 @@ function contact() {
                             </label>
                             <input 
                                 type='text'
-                                onChange={(e)=>{setSubject(e.target.value)}}
                                 name='subject' 
                                 className="inputField"
                                 placeholder='Area of your interest'
+                                required
+                                onChange={(e)=>{setSubject(e.target.value)}}
                             />
                         </formGroup>
                         <formGroup className="inputMess">
@@ -89,11 +92,12 @@ function contact() {
                             </label>
                             <input 
                                 type='text'
-                                onChange={(e)=>{setMessage(e.target.value)}}
                                 name='message'
                                 className="inputField2"
                                 maxLength={250}
                                 placeholder='Type your questions. You have 250 characters'
+                                required
+                                onChange={(e)=>{setMessage(e.target.value)}}
                             />
                         </formGroup>
                         <div className='justify-start items-center pt-1'>

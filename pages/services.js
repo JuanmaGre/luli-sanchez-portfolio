@@ -9,7 +9,7 @@ function ServicesCard({ user }) {
 
     return (
         <div>
-            <div className='justify-center items-center animate__animated animate__fadeInLeft space-y-8'>
+            <div className='justify-center items-center animate__animated animate__fadeInUp space-y-8'>
                 <img
                     src="asd.jpeg"
                     alt=""
@@ -17,7 +17,7 @@ function ServicesCard({ user }) {
                     className='rounded-full'
                 />
                 <button 
-                    className='services animate__animated animate__fadeInLeft'
+                    className='services animate__animated animate__fadeInUp'
                     type='button'
                     onClick={() => setShowModal(true)}
                 >
@@ -34,34 +34,41 @@ function ServicesCard({ user }) {
                                         </h3>
                                     </div>
                                     <div className="relative p-6 space-y-2 flex-auto">
-                                        <label className="block text-black text-sm font-bold mb-1">
+                                        <label className="block text-black text-lg font-bold mb-1">
                                             Stories
                                         </label>
                                         <p>
                                             {user.stories}
                                         </p>
-                                        <label className="block text-black text-sm font-bold mb-1">
+                                        <label className="block text-black text-lg font-bold mb-1">
                                             Reels
                                         </label>
                                         <p>
                                             {user.reels}
                                         </p>
-                                        <label className="block text-black text-sm font-bold mb-1">
+                                        <label className="block text-black text-lg font-bold mb-1">
                                             Posts
                                         </label>
                                         <p>
                                             {user.posts}
                                         </p>
-                                        <label className="block text-black text-sm font-bold mb-1">
-                                            Description
+                                        <label className="block text-black text-lg font-bold mb-1">
+                                            Counseling
+                                        </label>
+                                        <p>
+                                            {user.description}
+                                        </p>
+                                        <label className="block text-black text-lg font-bold mb-1">
+                                            Biography Optimization
                                         </label>
                                         <p className="appearance-none border-none w-full py-0 px-1 text-black">
-                                            {user.description}
+                                            {user.bio}
                                         </p>
                                     </div>
                                     <div className="flex items-center justify-center p-2 border-t border-solid border-blueGray-200 rounded-b">
                                         <button
-                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+                                            className="text-red-500 hover:text-red-900 background-transparent font-bold uppercase
+                                            px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
                                             type="button"
                                             onClick={() => setShowModal(false)}
                                         >
@@ -86,7 +93,7 @@ const servicesData = () => {
                     Services
                 </h1>
             </div>
-            <div className='flex-row flex justify-center pt-8 px-4 pb-12 space-x-36 bg-gradient-to-r from-white via-slate-100 to-white'>
+            <div className='flex-row flex justify-center pt-8 pb-12 space-x-36 bg-gradient-to-r from-white via-slate-100 to-white'>
                 {   
                     servicesInfo.map((user, i) => (
                         <ServicesCard user={user} key={i} />
