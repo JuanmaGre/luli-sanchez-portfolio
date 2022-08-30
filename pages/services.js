@@ -1,81 +1,101 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../components/Layout'
 import 'animate.css';
+import { servicesInfo } from '../profile'
 
 
-function services() {
+function ServicesCard({ user }) {
+    const [showModal, setShowModal] = useState(false);
+
+    return (
+        <div>
+            <div className='justify-center items-center animate__animated animate__fadeInLeft space-y-8'>
+                <img
+                    src="asd.jpeg"
+                    alt=""
+                    width={300}
+                    className='rounded-full'
+                />
+                <button 
+                    className='services animate__animated animate__fadeInLeft'
+                    type='button'
+                    onClick={() => setShowModal(true)}
+                >
+                    {user.title}
+                </button>
+                {
+                    showModal ? (
+                        <div className="flex justify-center items-center overflow-hidden fixed -top-10 z-50 outline-none focus:outline-none rounded-full animate__animated animate__fadeInUp">
+                            <div className="relative">
+                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-gray-300 outline-none focus:outline-none">
+                                    <div className="flex items-center justify-center p-5 border-b border-solid border-gray-100 space-x-2">
+                                        <h3 className="text-3xl font=semibold">
+                                            {user.title}
+                                        </h3>
+                                    </div>
+                                    <div className="relative p-6 space-y-2 flex-auto">
+                                        <label className="block text-black text-sm font-bold mb-1">
+                                            Stories
+                                        </label>
+                                        <p>
+                                            {user.stories}
+                                        </p>
+                                        <label className="block text-black text-sm font-bold mb-1">
+                                            Reels
+                                        </label>
+                                        <p>
+                                            {user.reels}
+                                        </p>
+                                        <label className="block text-black text-sm font-bold mb-1">
+                                            Posts
+                                        </label>
+                                        <p>
+                                            {user.posts}
+                                        </p>
+                                        <label className="block text-black text-sm font-bold mb-1">
+                                            Description
+                                        </label>
+                                        <p className="appearance-none border-none w-full py-0 px-1 text-black">
+                                            {user.description}
+                                        </p>
+                                    </div>
+                                    <div className="flex items-center justify-center p-2 border-t border-solid border-blueGray-200 rounded-b">
+                                        <button
+                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+                                            type="button"
+                                            onClick={() => setShowModal(false)}
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ) : null
+                }
+            </div>
+        </div>
+    );
+};
+
+const servicesData = () => {
     return (
         <Layout>
             <div className='flex-row bg-gradient-to-r from-white via-slate-100 to-white'>
                 <h1 className='flex justify-center pt-8 text-5xl font-footer font-semibold cursor-default animate__animated animate__fadeInUp'>
                     Services
                 </h1>
-
-                <div className='flex justify-center pt-8 px-4 pb-12 space-x-36'>
-                    <div className='animate__animated animate__fadeInLeft'>
-                        <img
-                            src="asd.jpeg"
-                            alt=""
-                            width={300}
-                            className='rounded-full'
-                        />
-                        <h1 className='services animate__animated animate__fadeInLeft'>
-                            Basic
-                        </h1>
-                        <p>
-                            4 stories
-                        </p>
-                        <p>
-                            2 posts
-                        </p>
-                        <p>
-                            3 reels
-                        </p>
-                    </div>
-                    <div className='animate__animated animate__fadeInUp'>
-                        <img
-                            src="asd.jpeg"
-                            alt=""
-                            width={300}
-                            className='rounded-full'
-                        />
-                        <h1 className='services animate__animated animate__fadeInUp'>
-                            Standard
-                        </h1>
-                        <p className=''>
-                            4 stories
-                        </p>
-                        <p className=''>
-                            2 posts
-                        </p>
-                        <p className=''>
-                            3 reels
-                        </p>
-                    </div>
-                    <div className='animate__animated animate__fadeInRight'>
-                        <img
-                            src="asd.jpeg"
-                            alt=""
-                            width={300}
-                            className='rounded-full'
-                        />
-                        <h1 className='services animate__animated animate__fadeInRight'>
-                            Premium
-                        </h1>
-                        <p>
-                            4 stories
-                        </p>
-                        <p>
-                            2 posts
-                        </p>
-                        <p>
-                            3 reels
-                        </p>
-                    </div>
-                </div>
+            </div>
+            <div className='flex-row flex justify-center pt-8 px-4 pb-12 space-x-36 bg-gradient-to-r from-white via-slate-100 to-white'>
+                {   
+                    servicesInfo.map((user, i) => (
+                        <ServicesCard user={user} key={i} />
+                    ))
+                }
             </div>
         </Layout>
     );
 };
 
-export default services
+
+export default servicesData

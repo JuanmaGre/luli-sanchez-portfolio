@@ -67,8 +67,8 @@
         @apply h-20 block w-full pb-11 pl-2 transition ease-in-out m-0
     }
     .services {
-        @apply justify-center text-center bg-[#ecfccb] rounded-full text-xl font-services mt-3.5
-        mx-16 hover:text-[#a5b4fc] cursor-pointer
+        @apply justify-center text-center bg-[#ecfccb] rounded-full text-xl font-services ml-24 px-6 p-2
+        hover:text-[#a5b4fc] cursor-pointer
     }
     .btn{
         @apply cursor-pointer flex justify-center p-2 px-2 border-solid border-4 border-white

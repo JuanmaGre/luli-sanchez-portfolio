@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { useState } from 'react'
-
+import 'animate.css';
 
 
 function contact() {
@@ -29,7 +29,6 @@ function contact() {
             },
             body: JSON.stringify(data)
         }).then((res) => {
-            console.log('I will contact you on the next 36 hours')
             if (res.status === 200) {
                 console.log('Message succeeded')
                 setSubmitted(true)
@@ -45,10 +44,10 @@ function contact() {
     return (
         <Layout>
             <div>
-                <h1 className='text-5xl py-6 justify-center text-center font-footer font-bold'>
+                <h1 className='text-5xl py-6 justify-center text-center font-footer font-bold animate__animated animate__fadeInDown'>
                     Contact
                 </h1>
-                <div className='flex-mb-4 pb-2 xl:pl-24 xl:pr-24'>
+                <div className='flex-mb-4 pb-6 xl:pl-24 xl:pr-24 animate__animated animate__fadeInUp'>
                     <form className='main rounded-3xl'>
                         <formGroup className="inputGroup">
                             <label htmlFor='name' className='inputLabel'>
